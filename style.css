@@ -97,6 +97,10 @@ body {
 }
 
 .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0px 20px;
     height: 0;
     opacity: 0;
@@ -108,7 +112,7 @@ body {
 }
 
 .card:hover .content {
-    height: 220px;
+    height: 320px;
     padding: 20px;
     opacity: 1;
     transform: translateY(0);
@@ -121,6 +125,7 @@ body {
 .card .content .title {
     font-size: 20px;
     font-weight: 600;
+    padding-top: 5px;
 }
 
 .card .content .desc {
@@ -132,7 +137,7 @@ body {
 }
 
 .card .content .nome-cargo {
-    padding: 20px;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -149,6 +154,13 @@ body {
 .card .arrow span {
     font-size: 24px;
 }
+
+.content audio {
+    width: 100%;
+    max-width: 200px;
+    padding: 15px;
+}
+
 
 footer {
     display: flex;
